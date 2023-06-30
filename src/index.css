@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "customFont";
+    src: url(assets/fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "BoldCustom";
+    src: url(assets/fonts/Roboto-bold.ttf);
+    font-weight: 700;
+}
+
+body {
+    @apply text-base bg-[#242742] font-[customFont]
+}
+
+h2 {
+    @apply font-[BoldCustom]
+}
+
+
+li {
+    @apply flex items-center gap-2 py-2
+}
+
+.input {
+    @apply px-3 py-3 rounded-lg my-3 ring-1 ring-[#9294a0] focus-within:outline-none focus-within:ring-1 focus-within:ring-black
+}
