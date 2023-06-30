@@ -10,7 +10,7 @@ function App() {
         <Subscripe email={email} setEmail={setEmail} setIsSubscriped={setIsSubscriped} />
       ) : (
         <div>
-          <Thanks email={email} />
+          <Thanks email={email} setIsSubscriped={setIsSubscriped} />
         </div>
       )}
     </div>
